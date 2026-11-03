@@ -4,6 +4,7 @@ html {
 
 * {
     box-sizing: border-box;
+    --font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 [dir=rtl] * {
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-family: var(--font-family);
     font-size: 1rem;
     background: #fbf9fa;
     font-weight: 600;
@@ -218,16 +219,37 @@ header .profile-pic img {
     height: 2rem;
 }
 
-header .icons {
-    /* background-color: tomato; */
-}
-
 header .icons i {
-    /* background-color: greenyellow; */
     height: 2rem;
     width: 2rem;
     color: #4a5565;
     border-color: #ebe6e7;
+    position: relative;
+    transition: .2s all;
+}
+
+header .icons i:hover {
+    background-color: #f6f3f4;
+}
+
+header .icons i:last-child::after {
+    content: "2";
+    position: absolute;
+    background-color: #FB2C36;
+    border-radius: 50%;
+    width: .75rem;
+    height: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: .75rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 1.3333;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
 }
 
 header .status {
@@ -262,7 +284,6 @@ header .status span::after {
 @keyframes background {
     0% {
         background-color: #00c951;
-        /* Deep Purple */
     }
 
     50% {
@@ -271,6 +292,5 @@ header .status span::after {
 
     100% {
         background-color: #00c951;
-        /* Midnight Purple */
     }
 }

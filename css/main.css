@@ -590,3 +590,93 @@ header .status span::after {
     color: #006045;
     background-color: #d0fae5;
 } 
+
+.bills-card.card header h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.55556;
+}
+
+.bills-card .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fit-content);
+}
+
+.bills-card .bill-icon {
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: .5rem;
+}
+
+.bills-card .bill-icon img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.bills-card .text-center {
+    margin-bottom: 1rem;
+}
+
+.bills-card .total {
+    color: #101828;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 1.2;
+}
+
+.bills-card .name {
+    color: #6a7282;
+    font-size: .875rem;
+    line-height: 1.42857;
+}
+
+.bills-card .bill {
+    padding: .75rem;
+    background-color: #F9FAFB;
+    border-color: #F3F4F6;
+}
+
+.bills-card .internet .bill-icon {
+    background-color: #dbeafe;
+}
+
+.bills-card .electricity .bill-icon {
+    background-color: #fef9c2;
+}
+
+.bills-card .phone .bill-icon {
+    background-color: #dcfce7;
+    margin-bottom: .5rem;
+}
+
+.bills-card .netflix .bill-icon {
+    background-color: #ffe2e2;
+}
+
+.bills-card .bill .type, .bills-card .bill .due-date {
+    color: #6a7282;
+    font-size: .75rem;
+    line-height: 1.3333;
+}
+
+.bills-card .bill .amount {
+    color: #101828;
+    font-weight: 600;
+}
+
+.bills-card .bill .due-date {
+    font-size: .75rem;
+    line-height: 1.3333;
+}
+
+.bills-card .internet .due-date {
+    color: #fb2c36;
+}
+
+.bills-card .electricity .due-date {
+    color: #ff6900;
+}
+
+.bills-card .phone .due-date {
+    color: #00c951;
+}

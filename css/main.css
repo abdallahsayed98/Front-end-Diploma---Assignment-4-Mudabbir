@@ -340,8 +340,13 @@ header .status span::after {
     color: #e7000b;
 }
 
+.widgets {
+    grid-template-columns: minmax(0, 1fr);
+}
+
 .widgets .card {
     border-color: var(--border-color);
+    min-width: 0;
 }
 
 .widgets .card header {
@@ -446,3 +451,142 @@ header .status span::after {
     line-height: 1.33333;
     color: #6a7282;
 }
+
+.card header span {
+    color: #4a5565;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.42857;
+}
+
+.card header span:hover {
+    color: #101828;
+}
+
+.transactions-card .table-container {
+    overflow-x: auto;
+}
+
+.transactions-card table {
+    font-size: .75rem;
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+}
+
+.transactions-card tr {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.transactions-card thead tr {
+    border-bottom-color: #f6f3f4;
+}
+
+.transactions-card tbody tr {
+    border-bottom-color: #fbf9fa;
+}
+
+.transactions-card th, .transactions-card td{
+    padding: .5rem .25rem;
+    white-space: nowrap;
+}
+
+.transactions-card th {
+    color: #364153;
+    font-weight: 600;
+    text-align: right;
+}
+
+.transaction .beneficiary-pic {
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.transaction .beneficiary-pic.icon img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.transaction .name {
+    color: #101828;
+    font-weight: 500;
+}
+
+.transaction .reason {
+    color: #6a7282;
+    line-height: 1.3333;
+}
+
+.transaction .category {
+    width: fit-content;
+}
+
+.transaction .category img {
+    width: .75rem;
+    height: .75rem;
+}
+
+.transaction .date {
+    color: #4a5565;
+}
+
+.transaction .status span, .transaction .category {
+    padding: calc(.25rem * .5) calc(.25rem * 2.5);
+    border-radius: 38px;
+}
+
+.transaction .completed {
+    color: #016630;
+    background-color: #dcfce7;
+}
+
+.transaction .suspended {
+    color: #894b00;
+    background-color: #fef9c2;
+}
+
+.transaction .postive {
+    color: #00a63e;
+}
+
+.transaction:nth-child(2) .beneficiary-pic {
+    background-color: #ffedd4;
+}
+
+.transaction:nth-child(2) .category {
+    color: #9f2d00;
+    background-color: #ffedd4;
+}
+
+.transaction:nth-child(3) .beneficiary-pic, .transaction:nth-child(3) .category {
+    color: #193cb8;
+    background-color: #dbeafe;
+} 
+
+.transaction:nth-child(4) .category {
+    color: #6e11b0;
+    background-color: #f3e8ff;
+} 
+
+.transaction:nth-child(6) .beneficiary-pic, .transaction:nth-child(6) .category {
+    color: #9f0712;
+    background-color: #ffe2e2;
+} 
+
+.transaction:nth-child(7) .beneficiary-pic, .transaction:nth-child(7) .category {
+    color: #372aac;
+    background-color: #e0e7ff;
+} 
+
+.transaction:nth-child(8) .beneficiary-pic, .transaction:nth-child(8) .category {
+    color: #005f78;
+    background-color: #cefafe;
+} 
+
+.transaction:nth-child(9) .beneficiary-pic, .transaction:nth-child(9) .category {
+    color: #006045;
+    background-color: #d0fae5;
+} 

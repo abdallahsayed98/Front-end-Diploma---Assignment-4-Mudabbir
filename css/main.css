@@ -591,7 +591,7 @@ header .status span::after {
     background-color: #d0fae5;
 } 
 
-.bills-card.card header h3 {
+.bills-card.card header h3, .budget-overview-card.card header h3 {
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.55556;
@@ -679,4 +679,148 @@ header .status span::after {
 
 .bills-card .phone .due-date {
     color: #00c951;
+}
+
+.budget-overview-card .total {
+    background-color: #EFF4FF;
+    border-color: #dbeafe;
+    margin-bottom: 1.5rem;
+}
+
+.budget-overview-card .total .budget , .budget-overview-card .total .remain {
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.42857;
+}
+
+.budget-overview-card .total .budget {
+    color: #155dfc;
+}
+
+.budget-overview-card .total .remain {
+    color: #6a7282;
+}
+
+.budget-overview-card .total .remain-total {
+    color: #00a63e;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.555556;
+}
+
+.budget-overview-card .total .budget-total {
+    color: #1c398e;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.3333;
+}
+
+.budget-overview-card .total .used span {
+    font-size: .75rem;
+    font-weight: 600;
+    line-height: 1.3333;
+    color: #4a5565;
+}
+
+.budget-overview-card .range {
+    height: .5rem;
+    width: 100%;
+    background-color: #E5E7EB;
+    border-radius: 38px;
+    position: relative;
+}
+
+.budget-overview-card .range::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-radius: 38px;
+}
+
+.budget-overview-card .total .range::after {
+    content: "";
+    width: 84%;
+    background-color: #5869FF;
+}
+
+.budget-category-item {
+    background-color: #f9fafb80;
+    border-color: #e5e7ebcc;
+    color: #101828;
+}
+
+.budget-category-item:hover {
+    box-shadow: var(--box-shadow);
+    border-color: #d1d5dbe6;
+    transform: translateY(-1px);
+}
+
+.budget-category-item .icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #ffedd4;
+}
+
+.budget-category-item .icon img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.budget-category-item .category .type {
+    font-weight: 500;
+}
+
+.budget-category-item .category .amount {
+    font-size: .75rem;
+    font-weight: 600;
+    color: #6a7282;
+    line-height: 1.33333;
+}
+
+.budget-category-item .remain span {
+    padding: calc(.25rem * .5) .5rem;
+    font-size: .75rem;  
+    font-weight: 500;
+    border-radius: 38px;
+    color: #166534;
+    background-color: #dcfce7;
+}
+
+.budget-category-item:nth-child(1) .range::after {
+    width: 50%;
+    background-color: #ff6900;
+}
+
+.budget-category-item:nth-child(2) .range::after {
+    width: 100%;
+    background-color: #fb2c36;
+}
+
+.budget-category-item:nth-child(2) .icon , .budget-category-item:nth-child(2) span {
+    background-color: #FEE2E2;
+    color: #991b1b;
+}
+
+.budget-category-item:nth-child(3) .range::after {
+    width: 80%;
+    background-color: #F6339A;
+}
+
+.budget-category-item:nth-child(3) .icon {
+    background-color: #FCE7F3;
+}
+
+.budget-category-item:nth-child(3) span {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.budget-category-item:nth-child(4) .range::after {
+    width: 86%;
+    background-color: #00C950;
+}
+
+.budget-category-item:nth-child(4) .icon {
+    background-color: #DCFCE7;
 }

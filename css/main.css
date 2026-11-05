@@ -593,7 +593,8 @@ header .status span::after {
 
 .bills-card.card header h3, 
 .budget-overview-card.card header h3,
-.income-vs-expenses-card.card header h3 {
+.income-vs-expenses-card.card header h3,
+.account-summary.card header h3 {
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.55556;
@@ -910,4 +911,48 @@ header .status span::after {
 .chart-group span {
     color: #64748b;
     font-size: 0.75rem;
+}
+
+.summary-item {
+    background-color: #F9FAFB;
+    border-color: #f6f3f4;
+    color: #101828;
+}
+
+.summary-item .icon {
+    background-color: #DBEAFE;
+    color: #155DFC;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.summary-item .icon img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.summary-info .summary-name {
+    font-weight: 500;
+}
+
+.summary-info .summary-type {
+    color: #6a7282;
+    font-size: .75rem;
+    line-height: 1.33333;
+}
+
+.summanry-info .total {
+    font-weight: 600;
+}
+
+.summary-item.item-2 .icon {
+    background-color: #DBFCE7;
+}
+
+.summary-item.item-3 .icon {
+    background-color: #F3E8FF;
+}
+
+.summary-item.item-3 .total {
+    color: #e7000b;
 }

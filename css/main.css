@@ -591,7 +591,9 @@ header .status span::after {
     background-color: #d0fae5;
 } 
 
-.bills-card.card header h3, .budget-overview-card.card header h3 {
+.bills-card.card header h3, 
+.budget-overview-card.card header h3,
+.income-vs-expenses-card.card header h3 {
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.55556;
@@ -823,4 +825,89 @@ header .status span::after {
 
 .budget-category-item:nth-child(4) .icon {
     background-color: #DCFCE7;
+}
+
+.income-vs-expenses-card {
+    padding-bottom: 0;
+}
+
+.chart-items {
+    margin-bottom: 1rem;
+}
+
+.chart-item .square {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+}
+
+.chart-item span {
+    color: #64748b;
+    font-size: .75rem;
+}
+
+.income-vs-expenses-card .green {
+    background-color: #10B981;
+}
+
+.income-vs-expenses-card .red {
+    background-color: #EF4444;
+}
+
+.chart-groups {
+    padding: 1rem 0 .5rem;
+}
+
+.chart-group {
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.chart-group .bars {
+    height: 160px;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.chart-group .bar {
+    width: 16px;
+    border-radius: 3px 3px 0px 0px;
+    transition: .3s all;
+}
+
+.chart-group.group-1 .green {
+    height: 95px;
+}
+
+.chart-group.group-1 .red {
+    height: 42px;
+}
+
+.chart-group.group-2 .green {
+    height: 98px;
+}
+
+.chart-group.group-2 .red {
+    height: 45px;
+}
+
+.chart-group.group-3 .green {
+    height: 92px;
+}
+
+.chart-group.group-3 .red {
+    height: 38px;
+}
+
+.chart-group.group-4 .green {
+    height: 96px;
+}
+
+.chart-group.group-4 .red {
+    height: 45px;
+}
+
+.chart-group span {
+    color: #64748b;
+    font-size: 0.75rem;
 }

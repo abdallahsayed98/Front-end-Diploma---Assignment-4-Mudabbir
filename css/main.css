@@ -1114,3 +1114,15 @@ header .status span::after {
 .flip-card.mastercard .flip-card-front {
     background-color: #c70036;
 }
+
+.flip-card.mastercard .flip-card-front .card-footer {
+    margin-bottom: 0;
+}
+
+.flip-card.paypal .flip-card-front .card-footer {
+    margin-bottom: 0;
+}
+
+.flip-card.paypal .flip-card-front .date {
+    color: #05df72;
+}

@@ -104,7 +104,8 @@
             </div>
         </aside>
         <main id="main-content" class="d-flex flex-column gap-6">
-            <header class="d-flex flex-column border rounded-lg gap-4 p-2 box-shadow">
+            <header id="header"
+                class="d-flex flex-column sm-flex-row sm-justify-content-between border rounded-lg gap-4 p-2 box-shadow">
                 <div class="d-flex align-items-center gap-3">
                     <div class="flex-icon main-icon rounded-lg">
                         <img class="img" src="images/icons/coins-solid-full.png" alt="coins icon">
@@ -113,18 +114,26 @@
                         <h1>مدبّر</h1>
                         <p>إدارة أموالك بذكاء</p>
                     </div>
+                    <div class="hidden status sm-d-flex align-items-center justify-content-center border rounded-sm">
+                        <span>متصل</span>
+                    </div>
                 </div>
-                <div class="user d-flex justify-content-between align-items-center">
+                <div class="user d-flex justify-content-between align-items-center gap-2">
                     <div class="icons d-flex gap-1">
                         <i class="flex-icon border rounded-md fa-sm fa-solid fa-magnifying-glass"></i>
                         <i class="flex-icon border rounded-md fa-sm fa-regular fa-bell"></i>
                     </div>
                     <div
-                        class="d-flex justify-content-between align-items-center profile-pic bg-white border rounded-md box-shadow">
+                        class="d-flex justify-content-between align-items-center profile-pic bg-white border rounded-md box-shadow gap-2">
+                        <div class="text-right">
+                            <p class="hidden sm-block">سيف أسامة</p>
+                            <p class="hidden muted md-block">حساب مميز</p>
+                        </div>
                         <img class="rounded-md" src="images/avatar-1.jpg" alt="profile picture">
+                        
                     </div>
                 </div>
-                <div class="status d-flex align-items-center justify-content-center border rounded-sm">
+                <div class="status d-flex sm-hidden align-items-center justify-content-center border rounded-sm">
                     <span>متصل</span>
                 </div>
             </header>
@@ -482,7 +491,7 @@
                                 <span>82.5%</span>
                             </div>
                             <div class="range w-100">
-    
+
                             </div>
                         </div>
                     </div>
@@ -672,7 +681,8 @@
                                             <div class="icon-inner"></div>
                                         </div>
                                         <div class="icon-img">
-                                            <img class="img" src="images/icons/cc-visa-brands-solid-full.png" alt="visa icon">
+                                            <img class="img" src="images/icons/cc-visa-brands-solid-full.png"
+                                                alt="visa icon">
                                         </div>
                                     </div>
                                     <div class="number">
@@ -713,7 +723,8 @@
                                             <div class="icon-inner"></div>
                                         </div>
                                         <div class="icon-img">
-                                            <img class="img" src="images/icons/cc-mastercard-brands-solid-full.png" alt="mastercard icon">
+                                            <img class="img" src="images/icons/cc-mastercard-brands-solid-full.png"
+                                                alt="mastercard icon">
                                         </div>
                                     </div>
                                     <div class="number">
@@ -754,7 +765,8 @@
                                             <div class="icon-inner"></div>
                                         </div>
                                         <div class="icon-img">
-                                            <img class="img" src="images/icons/paypal-brands-solid-full.png" alt="paypal icon">
+                                            <img class="img" src="images/icons/paypal-brands-solid-full.png"
+                                                alt="paypal icon">
                                         </div>
                                     </div>
                                     <div class="number">

@@ -294,6 +294,18 @@ header .status span::after {
     animation-duration: 2s;
 }
 
+header .text-right {
+    color: #101828;
+    font-size: .75rem;
+    font-weight: 600;
+    line-height: 1.3333;
+}
+
+header .text-right .muted {
+    color: #6a7282;
+    font-size: .75rem;
+}
+
 @keyframes background {
     0% {
         background-color: #00c951;

@@ -1,11 +1,90 @@
 /* sm */
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+    .sm-d-flex {
+        display: flex;
+    }
+
+    .sm-hidden {
+        display: none;
+    }
+
+    .sm-block {
+        display: block;
+    }
+
+    .sm-flex-row {
+        flex-direction: row;
+    }
+
+    .sm-justify-content-between {
+        justify-content: space-between;
+    }
+
+    header .status {
+        padding: .25rem 1.25rem .25rem .5rem;
+    }
+}
 
 /* md */
 @media (min-width: 768px) {
     main {
         padding: 2rem;
         margin-right: 4rem;
+    }
+
+    #header {
+        padding: 1.5rem;
+    }
+
+    #header>div {
+        gap: 1rem;
+    }
+
+    #header h1 {
+        font-size: 2.25rem;
+        line-height: 1.1111;
+    }
+
+    #header .main-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    #header .main-icon img {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    #header .text-right {
+        font-size: .875rem;
+    }
+
+    #header .profile-pic {
+        padding: .5rem 1rem;
+        gap: .7rem;
+    }
+
+    #header .profile-pic img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    #header .status {
+        padding: calc(.25rem * 1.5) 2rem calc(.25rem * 1.5) .75rem;
+        font-size: .875rem;
+        line-height: 1.42857;
+    }
+
+    #header .icons i {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: large;
+    }
+
+    #header .icons i:last-child::after {
+        font-size: .875rem;
+        width: 1rem;
+        height: 1rem;
     }
 
     #sidebar {
@@ -32,6 +111,71 @@
 
     .md-hidden {
         display: none;
+    }
+
+    .md-block {
+        display: block;
+    }
+
+    .summary-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .summary-cards .card .money {
+        font-size: 1.5rem;
+        line-height: 1.33333;
+    }
+
+    .widgets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .transactions-card {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .transactions-card thead th {
+        padding: .75rem .5rem;
+    }
+
+    .transactions-card tbody td {
+        padding: 1rem .5rem;
+    }
+
+    .bills-card {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+
+    .budget-overview-card {
+        grid-column-start: 1;
+        grid-row-start: 5;
+    }
+
+    .income-vs-expenses-card {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .account-summary {
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+
+    .payment-methods {
+        grid-row-start: 5;
+    }
+
+    .widgets .card {
+        padding: 1.5rem;
+    }
+
+    .widgets .card header h3 {
+        font-size: 1.125rem;
+        line-height: 1.55556;
     }
 }
 
@@ -77,5 +221,50 @@
 
     .xl-block {
         display: block;
+    }
+
+    .widgets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .widgets .card {
+        padding: 2rem;
+    }
+
+    .transactions-card table {
+        font-size: .875rem;
+    }
+
+    .transactions-card table span , .transactions-card table .reason {
+        font-size: .75rem;
+    }
+
+    .transactions-card {
+        grid-column: span 2 / span 2;
+        grid-row: span 2 / span 2;
+    }
+
+    .bills-card {
+        grid-row-start: 2;
+    }
+
+    .budget-overview-card {
+        grid-row: span 2 / span 2;
+        grid-row-start: 3;
+    }
+
+    .income-vs-expenses-card {
+        grid-row-start: 3;
+    }
+
+    .account-summary {
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+
+    .payment-methods {
+        grid-row: span 2 / span 2;
+        grid-column-start: 3;
+        grid-row-start: 3;
     }
 }

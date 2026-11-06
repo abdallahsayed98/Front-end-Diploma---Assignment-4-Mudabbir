@@ -900,6 +900,11 @@ header .text-right .muted {
     transition: .3s all;
 }
 
+.chart-group .bar:hover {
+    opacity: .8;
+}
+
+
 .chart-group.group-1 .green {
     height: 95px;
 }
@@ -1140,6 +1145,19 @@ header .text-right .muted {
     color: #05df72;
 }
 
+.flip-card.visa .flip-card-front::after {
+    content: 'أساسية';
+    color: #fff;
+    backdrop-filter: blur(4px);
+    background: #ffffff24;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: .72rem;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
 
 #sidebar {
     position: fixed;

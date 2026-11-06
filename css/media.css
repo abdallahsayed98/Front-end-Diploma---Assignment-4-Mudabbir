@@ -267,4 +267,20 @@
         grid-column-start: 3;
         grid-row-start: 3;
     }
+
+    .budget-category-item .category,
+    .total .total-budget{
+        align-self: flex-start;
+    }
+
+    .budget-category-item .remain,
+    .total .total-remain {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 1536px) {
+    .xxl-flex-row {
+        flex-direction: row;
+    }   
 }

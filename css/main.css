@@ -487,7 +487,8 @@ header .status span::after {
     border-bottom-color: #fbf9fa;
 }
 
-.transactions-card th, .transactions-card td{
+.transactions-card th,
+.transactions-card td {
     padding: .5rem .25rem;
     white-space: nowrap;
 }
@@ -533,7 +534,8 @@ header .status span::after {
     color: #4a5565;
 }
 
-.transaction .status span, .transaction .category {
+.transaction .status span,
+.transaction .category {
     padding: calc(.25rem * .5) calc(.25rem * 2.5);
     border-radius: 38px;
 }
@@ -561,40 +563,46 @@ header .status span::after {
     background-color: #ffedd4;
 }
 
-.transaction:nth-child(3) .beneficiary-pic, .transaction:nth-child(3) .category {
+.transaction:nth-child(3) .beneficiary-pic,
+.transaction:nth-child(3) .category {
     color: #193cb8;
     background-color: #dbeafe;
-} 
+}
 
 .transaction:nth-child(4) .category {
     color: #6e11b0;
     background-color: #f3e8ff;
-} 
+}
 
-.transaction:nth-child(6) .beneficiary-pic, .transaction:nth-child(6) .category {
+.transaction:nth-child(6) .beneficiary-pic,
+.transaction:nth-child(6) .category {
     color: #9f0712;
     background-color: #ffe2e2;
-} 
+}
 
-.transaction:nth-child(7) .beneficiary-pic, .transaction:nth-child(7) .category {
+.transaction:nth-child(7) .beneficiary-pic,
+.transaction:nth-child(7) .category {
     color: #372aac;
     background-color: #e0e7ff;
-} 
+}
 
-.transaction:nth-child(8) .beneficiary-pic, .transaction:nth-child(8) .category {
+.transaction:nth-child(8) .beneficiary-pic,
+.transaction:nth-child(8) .category {
     color: #005f78;
     background-color: #cefafe;
-} 
+}
 
-.transaction:nth-child(9) .beneficiary-pic, .transaction:nth-child(9) .category {
+.transaction:nth-child(9) .beneficiary-pic,
+.transaction:nth-child(9) .category {
     color: #006045;
     background-color: #d0fae5;
-} 
+}
 
-.bills-card.card header h3, 
+.bills-card.card header h3,
 .budget-overview-card.card header h3,
 .income-vs-expenses-card.card header h3,
-.account-summary.card header h3 {
+.account-summary.card header h3,
+.payment-methods.card header h3 {
     font-size: 1.125rem;
     font-weight: 600;
     line-height: 1.55556;
@@ -656,7 +664,8 @@ header .status span::after {
     background-color: #ffe2e2;
 }
 
-.bills-card .bill .type, .bills-card .bill .due-date {
+.bills-card .bill .type,
+.bills-card .bill .due-date {
     color: #6a7282;
     font-size: .75rem;
     line-height: 1.3333;
@@ -690,7 +699,8 @@ header .status span::after {
     margin-bottom: 1.5rem;
 }
 
-.budget-overview-card .total .budget , .budget-overview-card .total .remain {
+.budget-overview-card .total .budget,
+.budget-overview-card .total .remain {
     font-size: .875rem;
     font-weight: 500;
     line-height: 1.42857;
@@ -783,7 +793,7 @@ header .status span::after {
 
 .budget-category-item .remain span {
     padding: calc(.25rem * .5) .5rem;
-    font-size: .75rem;  
+    font-size: .75rem;
     font-weight: 500;
     border-radius: 38px;
     color: #166534;
@@ -800,7 +810,8 @@ header .status span::after {
     background-color: #fb2c36;
 }
 
-.budget-category-item:nth-child(2) .icon , .budget-category-item:nth-child(2) span {
+.budget-category-item:nth-child(2) .icon,
+.budget-category-item:nth-child(2) span {
     background-color: #FEE2E2;
     color: #991b1b;
 }
@@ -955,4 +966,163 @@ header .status span::after {
 
 .summary-item.item-3 .total {
     color: #e7000b;
+}
+
+.flip-card {
+    perspective: 1200px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    color: #fff;
+    position: relative;
+    transform: translateZ(0px);
+    backface-visibility: hidden;
+}
+
+.flip-card .flip-card-front {
+    padding: 1.75rem;
+    background-color: #372aac;
+    transform: translateZ(0px);
+}
+
+.flip-card .flip-card-front .card-header {
+    margin-bottom: 2rem;
+}
+
+.flip-card .flip-card-front .icon {
+    width: 3rem;
+    height: 2rem;
+    border-radius: .375rem;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.flip-card .flip-card-front .icon-inner {
+    width: 1.5rem;
+    height: 1rem;
+    border-radius: .25rem;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.flip-card .flip-card-front .icon-img {
+    height: 1.875rem;
+    width: 2.1rem;
+}
+
+.flip-card .flip-card-front p {
+    font-size: .75rem;
+}
+
+.flip-card .flip-card-front .number {
+    margin-bottom: .5rem;
+}
+
+.flip-card .flip-card-front .number p {
+    line-height: 1.4;
+    font-size: 1.25rem;
+}
+
+.flip-card .flip-card-front .date {
+    font-size: .875rem;
+}
+
+.flip-card .flip-card-front .card-footer {
+    margin-bottom: 1rem;
+}
+
+.flip-card .flip-card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(120deg, rgb(5, 16, 38), rgb(11, 18, 32) 45%, rgb(15, 23, 36));
+}
+
+.flip-card .flip-card-back .blur {
+    height: 52px;
+    margin-top: 6px;
+    box-shadow: rgba(255, 255, 255, 0.02) 0px 6px 14px inset;
+    background: linear-gradient(90deg, rgb(0, 0, 0), rgb(17, 17, 17) 40%, rgb(43, 43, 43));
+    border-radius: 3px;
+}
+
+.flip-card .flip-card-back p {
+    color: rgba(255, 255, 255, 0.478);
+    letter-spacing: 0.6px;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+.flip-card .flip-card-back .signature {
+    padding: 6px 8px;
+    background: linear-gradient(90deg, rgb(248, 250, 252), rgb(238, 242, 246));
+    font-weight: 700;
+    color: #111827;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+.flip-card .flip-card-back .gradient {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.06));
+    width: 86%;
+    height: 12px;
+    transform: skew(-10deg);
+    border-radius: 2px;
+}
+
+.flip-card .flip-card-back .last4 {
+    color: rgba(0, 0, 0, 0.85);
+    margin-left: 8px;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.flip-card .flip-card-back .cvv {
+    margin-top: 12px;
+    align-items: flex-end;
+}
+
+.flip-card .flip-card-back .cvv p {
+    color: #d1d5dc;
+    font-size: .75rem;
+    line-height: 1.33333;
+}
+
+.flip-card .flip-card-back .box {
+    color: rgb(17, 24, 39);
+    letter-spacing: 1px;
+    text-align: center;
+    min-width: 48px;
+    font-weight: 700;
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.flip-card.mastercard .flip-card-front {
+    background-color: #c70036;
+}
+
+.flip-card.mastercard .flip-card-front .card-footer {
+    margin-bottom: 0;
+}
+
+.flip-card.paypal .flip-card-front .card-footer {
+    margin-bottom: 0;
+}
+
+.flip-card.paypal .flip-card-front .date {
+    color: #05df72;
 }

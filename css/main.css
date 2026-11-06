@@ -1110,3 +1110,7 @@ header .status span::after {
     border-radius: 6px;
     padding: 8px 12px;
 }
+
+.flip-card.mastercard .flip-card-front {
+    background-color: #c70036;
+}
